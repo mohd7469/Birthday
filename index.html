@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" ng-app="modalTest">
+<head><title>be-happy</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Responsive Coming Soon HTML 5 Premium Template">
+    <meta name="keywords"
+          content="themewings, coming soon page, ajax contact form, pattern background, background slider, clean, countdown timer, full screen background, newsletter, one-page, responsive, slider, video background, youtube background, under construction">
+    <meta name="author" content="themewings">
+    <link href='others/css.css'
+          rel='stylesheet' type='text/css'>
+    <link href='others/css1.css' rel='stylesheet' type='text/css'>
+    <link href='others/css2.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="fonts/scope/light/youtube-videos-timer.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+
+    <!--Glow-->
+    <!--<link rel="stylesheet" href="./glow/style.css"/>-->
+    <!--<link rel="stylesheet" href="./glow/font.css"/>-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+    <!--<link rel="stylesheet" href="./glow/bootstrap-theme.min.css"/>-->
+    <!--<link rel="stylesheet" href="./glow/general.css"/>-->
+    <!--<link href="./glow/simple-sidebar.css" rel="stylesheet">-->
+    <link href="./glow/buttons.css" rel="stylesheet">
+
+
+    <!--Glow-->
+
+    <!--alert-->
+    <script src="forAlert/angular.min.js"></script>
+    <script src="forAlert/ui-bootstrap.js" type="text/javascript"></script>
+    <script src="forAlert/dialogs.min.js" type="text/javascript"></script>
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+    <style>
+        /* Fix for Bootstrap 3 with Angular UI Bootstrap */
+
+        .DateRange, .DateDiv {
+            display: none;
+        }
+
+        .timeOfComplete {
+            float: right;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            margin: 0px 1em 0.5em 0px;
+        }
+
+        /*div#expire {*/
+        /*display: none;*/
+
+        /*}*/
+        /*.song {*/
+        /*display: none;*/
+
+        /*}*/
+
+        .words {
+            display: none;
+        }
+
+        .modal {
+            display: block;
+        }
+
+        /* Custom dialog/modal headers */
+
+        .dialog-header-notify {
+            background-color: #333333;
+        }
+
+        .dialog-header-error span, .dialog-header-error h4,
+        .dialog-header-wait span, .dialog-header-wait h4,
+        .dialog-header-confirm span, .dialog-header-confirm h4 {
+            color: #ffffff;
+        }
+
+        /* Ease Display */
+
+        .pad {
+            padding: 25px;
+        }
+    </style>
+
+    <!--alert-->
+
+
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/ie-style.css"><![endif]-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!--<!--[if lt IE 9]>-->
+    <!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+    <!--<script src="js/respond.min.js"></script>-->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">-->
+    <!--<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">-->
+    <!--<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
+</head>
+<body class="slideshow-background">
+<div id="preloadcontainer">
+    <div id="preload-content">
+        <div class="spinner"><i class="fa fa-spinner fa-spin"></i>
+
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+            <div class="loadingtext">Loading...</div>
+        </div>
+    </div>
+</div>
+<div ng-show="false" ng-controller="dialogServiceTest" class="theEnd pad">
+    <div class="row">
+        <div class="col-md-12">
+            <button id="birthday" class="btn btn-danger" ng-click="launch('notify')">Notify Dialog</button>
+        </div>
+    </div>
+</div>
+
+<div class="stopImage">
+    <div class="pageoverlay"></div>
+    <div class="star morestars starbackground"></div>
+    <div class="parallax-wallpaper" data-parallaxify-range="50"></div>
+</div>
+
+
+<!--<video id="video_background" class="video_bg" preload="auto" autoplay loop="loop" muted="muted"-->
+<!--poster="background/video-fallback.jpg">-->
+<!--<source src="video/video.mp4" type="video/mp4">-->
+<!--<!--<source src="video/video.webm" type="video/webm">-->
+<!--<!--<source src="video/video.ogv" type="video/ogg">-->
+<!--<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab"-->
+<!--height="100%" width="100%">-->
+<!--<param name="src" value="video/video.mp4">-->
+<!--</object>-->
+<!--</video>-->
+<!--<div id="youtube_background" class="video_bg"><a class="player"-->
+<!--data-property="{videoURL:rndVideo,containment:'body',autoPlay:true, mute:true, quality: 'small', startAt:0, showControls:false, opacity:1}"-->
+<!--data-poster="images/1.jpg"></a></div>-->
+<nav class="theEnd navigation-dot navdotstyle navdotstyle-tooltip animationonstart animated" data-animation="fadeInUp"
+     data-animation-delay="1200">
+    <div class="navigation-dot-container">
+        <ul>
+            <li class="homestart navcurrent"><a href="javascript:"><span class="words">Happy</span><span
+                    class="noWords">...</span></a></li>
+            <li class="about"><a href="javascript:"><span class="words">Birthday</span><span class="noWords">...</span></a>
+            </li>
+            <li class="services"><a href="javascript:"><span class="words">To</span><span class="noWords">...</span></a>
+            </li>
+            <li class="contact"><a href="javascript:"><span class="words">You</span><span class="noWords"><i
+                    class="fa fa-repeat"></i></span></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" data-parallaxify-range="100">
+    <div class="row">
+        <div class="col-lg-6 site-logo animationonstart animated" data-animation="fadeInDown"
+             data-animation-delay="1200"><img src="images/logo2.png" alt="" style="height: 110px;width: 250px"/></div>
+        <nav class="col-lg-6 social animationonstart animated" data-animation="fadeInDown" data-animation-delay="1200">
+            <!--<ul class="videoicon">-->
+            <!--<li class="vcontroll"><a id="bg-video-play" class="icon fa fa-pause" href="javascript:" title="Pause"></a></li>-->
+            <!--<li class="vcontroll"><a id="bg-video-volume" class="icon fa fa-volume-off" href="javascript:" title="Unmute"></a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <ul class="socialicon">
+                <li class="words"><a href="javascript:" title="Happy Birthday"><i class="fa fa-spinner"></i></a></li>
+                <li>
+                    <a id="reload" href="./index.html" title="From ...">
+                        <span class="words"><span class="text-danger font-bold button-glow">Happy Birthday Awais</span></span>
+                        <span class="theEnd noWords"><span>Awais</span></span>
+                    </a>
+                </li>
+                <li class="words"><a href="javascript:" title="To You"><i class="fa fa-tags"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="empty-space">&nbsp;</div>
+    </div>
+    <div class="theEnd row">
+        <div class="col-lg-4 count-down animationonstart animated" data-animation="fadeInDown"
+             data-animation-delay="1200">
+            <div id="countdown" class="rotatecont">
+                <ul class="countdown">
+                    <li class="countdowndays"><span class="days">Cel<i class="fa fa-star-o"></i></span>
+
+                        <p class="countlabel days_ref">days</p>
+
+                        <p class="leftlabel">L</p></li>
+                    <li class="countdownhrs"><span class="hours">eb<i class="fa fa-star"></i></span>
+
+                        <p class="countlabel hours_ref">hours</p>
+
+                        <p class="leftlabel">E</p></li>
+                    <li class="countdownmin"><span class="minutes">ra<i class="fa fa-star"></i></span>
+
+                        <p class="countlabel minutes_ref">minutes</p>
+
+                        <p class="leftlabel">F</p></li>
+                    <li class="countdownsec"><span class="seconds">te<i class="fa fa-star-o"></i></span>
+
+                        <p class="countlabel seconds_ref">seconds</p>
+
+                        <p class="leftlabel">T</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-8 animationonstart animated" data-animation="fadeInRight" data-animation-delay="1200">
+            <div class="slider-container">
+                <div id="owl-demo" class="owl-carousel custom-animations">
+                    <div id="intro-content" class="introcontent">
+
+                        <h2 class="noWords">
+                            Let the <span>time's</span> up
+                        </h2>
+
+                        <h2 class="words color-white letter-spacing-10">
+                            Happy To See <span>You</span></h2>
+
+                        <div class="partition clock"></div>
+                        <em class="noWords">
+                            <br/>
+                            <span class="text-muted button-glow">wait till then...</span>
+                            <center>visible on 5/8/2016</center>
+                        </em>
+
+                        <p class="color-off-white">
+                            <em class="words">
+                                I wish you all the very happy <span class="button-glow">birthday</span>
+                                <center>just visible today</center>
+                            </em>
+                        </p>
+
+
+                    </div>
+                    <div id="about-content" class="aboutcontent">
+                        <div id="services-content" class="servicescontent">
+                            <h2 class="noWords">
+                                Let the <span>time's</span> up
+                            </h2>
+
+                            <div class="service1">
+                                <h2 class="words color-off-white">
+                                    <i class="fa fa-gift"></i>
+                                    <i class="fa">Happy Birthday</i>
+                                    <i class="fa fa-star-o">
+                                        <i class="fa fa-star-o"></i>
+                                    </i>
+                                </h2>
+
+                                <div class="partition clock"></div>
+                                <em class="noWords">
+                                    <br/>
+                                    <span class="text-muted button-glow">wait till then...</span>
+                                    <center>visible on 5/8/2016</center>
+                                </em>
+
+                                <p class="color-off-white">
+                                    <em class="words">
+                                        I wish you all the very happy <span class="button-glow">birthday</span>
+                                        <center>just visible today</center>
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="services-content" class="servicescontent">
+                        <h2 class="noWords">
+                            Let the <span>time's</span> up
+                        </h2>
+
+                        <h2 class="words color-white letter-spacing-10">
+                            Dedicated To<span>You</span>
+                        </h2>
+
+                        <div class="partition clock"></div>
+                        <em class="noWords">
+                            <br/>
+                            <span class="text-muted button-glow">wait till then...</span>
+                            <center>visible on 5/8/2016</center>
+                        </em>
+                        <br/>
+
+                        <div class="words">
+                            <audio src="fonts/scope/light/happy_birthday.mp3" controls></audio>
+                            <p class="color-off-white">
+                                <em class="words text-muted">
+                                    <br/>
+                                    <span class="button-glow">
+                                I wish you all the very happy <span class="button-glow">birthday</span>
+                                </span>
+                                </em>
+                            </p>
+                            <center>just visible today</center>
+
+                        </div>
+                    </div>
+                    <div id="services-content" class="servicescontent">
+                        <h2 class="noWords">
+                            Let the <span>time's</span> up
+                        </h2>
+
+                        <h2
+                                class="words color-white letter-spacing-10">
+                            And Last <span>thing</span>
+                        </h2>
+
+                        <div class="partition clock"></div>
+                        <em class="noWords">
+                            <br/>
+                            <span class="text-muted button-glow">wait till then...</span>
+                            <center>visible on 5/8/2016</center>
+                        </em>
+
+                        <div class="words col-md-12">
+                            <em>
+                                    I wish you all the very happy <span class="button-glow">birthday</span>
+                                    <h4 class="color-white letter-spacing-10">
+                                    <span>Good By </span>
+                                    <span><i class="fa fa-xing"></i></span>
+                                </h4>
+                            </em>
+                            <center>just visible today</center>
+
+                            <div class="contactresponse"></div>
+                            <div class="contactsuccess"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<center class="song">-->
+<!--<audio class="button-glow" src="fonts/scope/light/kuch_to_hai.mp3" controls></audio>-->
+<!--</center>-->
+
+<div class="DateDiv"><span class="DateRange">8/6/2016 to 8/10/2016</span>
+    <center>
+        <audio class="button-glow" src="fonts/scope/light/happy_birthday.mp3" controls></audio>
+        <br/>
+        visible from 6/8/2016 to 10/8/2016
+    </center>
+</div>
+
+<div class="DateDiv"><span class="DateRange">8/10/2016 to 10/1/2016</span>
+    <h2 class="text-warning text-center">The End<br/>.....</h2>
+    <center>visible from 10/8/2016 to 1/10/2016</center>
+</div>
+
+<div class="timeOfComplete">
+    <span class="text-muted">2:07 AM Saturday, 11 June 2016 </span>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.fittext.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallaxify.min.js"></script>
+<script type="text/javascript" src="js/jquery.particleground.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.downCount.js"></script>
+<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/scripts-custom.js"></script>
+<script type="text/javascript" src="forAlert/alert.js"></script>
+
+<!--DateRange-->
+<script type="text/JavaScript">
+    $(function () {
+        $(".DateDiv").each(function (index) {
+            var sRange = $(this).find(".DateRange").html();
+            var arrTemp = sRange.split(" to ");
+            var dtFrom = new Date(arrTemp[0]);
+            var dtTo = new Date(arrTemp[1]);
+            var dtNow = new Date();
+            console.log(dtNow);
+            if (dtNow >= dtFrom && dtNow <= dtTo)
+                $(this).show();
+        });
+    });
+</script>
+
+
+</body>
+</html>
